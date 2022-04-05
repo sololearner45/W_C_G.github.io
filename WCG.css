@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+background-color:rgb(77,185,185);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+opacity: 0.9;
+}
+marquee { color:#ff0000;
+    text-align: center;
+  font-size:30px;
+  height: 100px;
+  margin-top: 0px;
+}
+.hritself{display: block;
+  border-width: 2px;
+  border-color: rgb(24, 26, 26);
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  border-radius: 30px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333; 
+  width: 100%;
+
+}
+.hide {
+  display: none;
+      }
+.myDIV:hover + .hide {
+  display: block;
+  color: rgba(14, 1, 1, 0.849);
+   }
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 13px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#333;
+  color: black;
+}
+
+.topnav a.active {
+   
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+h1,h2,h3{
+  text-align: center;
+}
+.topnav ul li{ background-color: darkred;
+  list-style: none;
+
+}
+.topnav ul{
+  background-color: #ff0000;
+  border-top: 1px solid red;
+
+} 
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.img{
+  text-align: center;
+}
+.dots {
+  height: 165px;
+  width: 165px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dots h1{
+  color: rgba(31, 3, 3, 0.5);
+}
+
+#textshadow {
+  animation: mymove 3s infinite ;
+  text-align: center;
+  font-size: 40px;
+  color: #eb4310;
+  font-style:inherit ;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px rgb(34, 16, 194);}
+}
+
+.dots h1{
+  font-size:32px;
+}
+#firstblock a,#secondblock a,#thirdblock a{
+  color:#000;
+
+}
+#firstblock a:hover,#secondblock a:hover,#thirdblock a:hover{
+  text-decoration: none;
+  color:#eb4310
+
+}   
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  text-align: right;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: none;
+  position: fixed;
+  right: 0px;
+  bottom: 12%;
+}
+
+.chat-bot {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  bottom: 20px;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(74, 45, 179);
+  color: rgba(24, 3, 3, 0.507);
+  text-align: center;
+}
